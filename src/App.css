@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-	font-family: "Iconsolata";
+	font-family: "Inconsolata";
 	src: url("assets/fonts/Inconsolata-VariableFont.ttf");
 }
 
@@ -22,7 +22,7 @@
 /* mobile size */
 body {
 	margin: 0;
-	font-family: "Iconsolata";
+	font-family: "Inconsolata", monospace;
 	background-image: url("../public/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
 		url("../public/images/pattern-lines.svg"),
 		url("../public/images/pattern-circle.svg"),
@@ -33,11 +33,10 @@ body {
 		right top;
 	background-repeat: no-repeat;
 	color: white;
-	/* background-attachment: fixed; */
 }
 
 /* tablet size */
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
 	body {
 		background-image: url("../public/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
 			url("../public/images/pattern-lines.svg"),
@@ -51,7 +50,7 @@ body {
 }
 
 /* desktop size */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
 	body {
 		background-image: url("../public/images/pattern-squiggly-line-bottom-desktop.svg"),
 			url("../public/images/pattern-lines.svg"),

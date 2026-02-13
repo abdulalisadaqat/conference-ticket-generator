@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/abdulalisadaqat/product-list-with-cart)
-- Live Site URL: (https://product-list-with-cart-nu-five.vercel.app)
+- Solution URL: (https://www.frontendmentor.io/solutions/conference-ticket-generator-react-app-_kg6Rg_6Zi)
+- Live Site URL: (https://conference-ticket-generator-virid-alpha.vercel.app/)
 
 ### Built with
 
@@ -33,6 +33,23 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [TailwindCSS](https://tailwindcss.com/) - CSS framework
+
+### What I learned
+
+I have learned how to add multiple background images to body.  
+In this syntax, the first image will show on top of bottom images.
+
+```css
+background-image: 
+    url("../public/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+		url("../public/images/pattern-lines.svg"),
+		url("../public/images/pattern-circle.svg"),
+		url("../public/images/pattern-squiggly-line-top.svg"),
+		url("../public/images/background-mobile.png");
+	background-size: 260px, 900px, 115px, 31%, cover;
+	background-position: left bottom, left top, 120% bottom, right 3%,
+		right top;
+```
 
 ## Author
 

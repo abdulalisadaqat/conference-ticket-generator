@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "Iconsolata";
+	src: url("assets/fonts/Inconsolata-VariableFont.ttf");
+}
+
+@theme {
+	--breakpoint-xs: 425px;
+
+	--color-primary: hsl(0, 0%, 100%);
+	--color-primary-200: hsl(255, 3%, 100%);
+	--color-primary-300: hsl(252, 6%, 83%);
+	--color-primary-500: hsl(245, 15%, 58%);
+	--color-primary-700: hsl(245, 19%, 35%);
+	--color-primary-900: hsl(248, 70%, 10%);
+
+	--color-secondary-500: hsl(7, 88%, 67%);
+	--color-secondary-700: hsl(7, 71%, 60%);
+}
+
+/* mobile size */
+body {
+	margin: 0;
+	font-family: "Iconsolata";
+	background-image: url("../public/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+		url("../public/images/pattern-lines.svg"),
+		url("../public/images/pattern-circle.svg"),
+		url("../public/images/pattern-squiggly-line-top.svg"),
+		url("../public/images/background-mobile.png");
+	background-size: 260px, 900px, 115px, 31%, cover;
+	background-position: left bottom, left top, 120% bottom, right 3%,
+		right top;
+	background-repeat: no-repeat;
+	color: white;
+	/* background-attachment: fixed; */
+}
+
+/* tablet size */
+@media (min-width: 640px) {
+	body {
+		background-image: url("../public/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+			url("../public/images/pattern-lines.svg"),
+			url("../public/images/pattern-circle.svg"),
+			url("../public/images/pattern-squiggly-line-top.svg"),
+			url("../public/images/background-tablet.png");
+		background-size: 350px, 1000px, 150px, 31%, cover;
+		background-position: left bottom, center top, 77% 61%, right 9%,
+			center center;
+	}
+}
+
+/* desktop size */
+@media (min-width: 768px) {
+	body {
+		background-image: url("../public/images/pattern-squiggly-line-bottom-desktop.svg"),
+			url("../public/images/pattern-lines.svg"),
+			url("../public/images/pattern-circle.svg"),
+			url("../public/images/pattern-squiggly-line-top.svg"),
+			url("../public/images/background-desktop.png");
+		background-size: 40%, contain, 150px, 31%, cover;
+		background-position: left bottom, center top, 77% 61%, right 9%,
+			center center;
+	}
+}
+
+.text-gradient {
+	color: transparent;
+	background: linear-gradient(to right, var(--color-secondary-500), var(--color-primary));
+	background-clip: text;
+	-webkit-background-clip: text;
+}
